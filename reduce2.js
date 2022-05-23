@@ -11,3 +11,5 @@ console.log(alunos.map(a => a.bolsista).reduce(todos))
 //algum aluno e bolsista ?
 const algum = (resultado, bolsista) => resultado || bolsista
 console.log(alunos.map(a => a.bolsista).reduce(algum))
+
+//primeiro criterio para reduce é o valor a ser acumulado, e o degundo é o boleano
