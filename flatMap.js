@@ -42,3 +42,5 @@ const notas2 = escola.flatMap(getNotaTurma)
 const media = escola.flatMap(getNotaTurma).reduce(soma) / notas2.length // e aqui aplicamos a nova funcao "flatmap"
 console.log(notas2) ///[ 8.1, 9.3, 8.9, 7.3]
 console.log(media) ///8.399999999999999
+
+//decidi deixar esse codigo um pouco a minha cara , pois o teacher nao deixou a media

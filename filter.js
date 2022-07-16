@@ -8,7 +8,7 @@ const produtos = [
 
 const caro = produto => produto.preco >= 500
 
-const fragil = produto => produto.fragil //arrow function co 1 parametro nap precisa de chaves
+const fragil = produto => produto.fragil //arrow function com 1 parametro nao precisa de chaves
 
 ///
 console.log(produtos.filter(fragil).filter(caro)) /*[

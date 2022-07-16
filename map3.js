@@ -1,8 +1,8 @@
-//isso tudo pra criar um map
+//essa função simula a funcionalidade do map
 Array.prototype.map2 = function (callback) {
   const newArray = []
   for (let i = 0; i < this.length; i++) {
-    newArray.push(callback(this[i], i, this)) //percorri o array usando o this
+    newArray.push(callback(this[i], i, this)) //percorrendo o array usando o this
   }
   return newArray
 }
@@ -14,9 +14,9 @@ const carrinho = [
   '{"nome":"caneta","preco":7.50}'
 ]
 
-const paraObject = Json => JSON.parse(Json)
-const apenasPreco = produto => produto.preco
+const paraObject = Json => JSON.parse(Json) //passando o JSON para objeto
+const apenasPreco = produto => produto.preco // selecionamdo o preço dos produtos
 
-const resultado = carrinho.map2(paraObject).map2(apenasPreco)
+const resultado = carrinho.map2(paraObject).map2(apenasPreco) // aplicando a funçao função falsa map (map2)
 
-console.log(resultado)
+console.log(resultado) ///[ 3.54, 11, 41, 7.5 ]
